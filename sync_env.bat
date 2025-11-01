@@ -3,7 +3,7 @@ setlocal
 
 set REMOTE_USER=litup
 set REMOTE_HOST=220.93.50.45
-set REMOTE_PATH=/Users/litup/workspace/litup/dockers/server/app
+set REMOTE_PATH=/Users/litup/workspace/litup/dockers/server-admin/app
 set REMOTE_PORT=4342
 
 echo 🚀 Sending .env file to %REMOTE_USER%@%REMOTE_HOST%:%REMOTE_PATH%

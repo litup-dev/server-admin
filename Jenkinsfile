@@ -6,7 +6,7 @@ pipeline {
         REMOTE_USER  = 'litup'
         REMOTE_SERVER = '220.93.50.45'
         REMOTE_PORT  = '4342'
-        REMOTE_PATH  = '/Users/litup/workspace/litup/dockers/server'
+        REMOTE_PATH  = '/Users/litup/workspace/litup/dockers/server-admin'
         APP_PATH     = "${REMOTE_PATH}/app"
     }
 
@@ -22,7 +22,7 @@ pipeline {
         stage('Install & Build') {
             steps {
                 sh 'git clean -fdx || true' 
-                sh 'yarn install --immutable'
+                sh 'yarn install'
                 // sh 'yarn prisma generate'
                 sh 'yarn build'
             }
