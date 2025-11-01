@@ -15,7 +15,7 @@ pipeline {
             steps {
                 git credentialsId: 'backend_credential', 
                     branch: 'main', 
-                    url: 'https://github.com/litup-dev/server.git'
+                    url: 'https://github.com/litup-dev/server-admin.git'
             }
         }
 
